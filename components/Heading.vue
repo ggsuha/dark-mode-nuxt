@@ -1,5 +1,9 @@
+<script setup lang="ts">
+const { isDarkMode } = useDarkMode();
+</script>
+
 <template>
-    <div class="container">
+    <div class="container" :style="isDarkMode ? { color: '#ffff' } : undefined">
         <div class="content-container">
             <div class="text-container">
                 <h4>Based on your reading history</h4>
